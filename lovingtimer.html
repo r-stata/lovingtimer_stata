@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Loving timer</title>
+    <script type='text/javascript' src='https://tidyfriday.cn/loving-timer/static/jquery.min.js'></script>
+    <script type='text/javascript' src='https://tidyfriday.cn/loving-timer/static/TimeCircles.js'></script>
+    <link rel='stylesheet' href='https://tidyfriday.cn/loving-timer/static/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://tidyfriday.cn/loving-timer/static/TimeCircles.css'>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-color: #AC9969;
+            background-image: url("./bgpic.png");
+        }
+        .container {
+            width: 800px;
+            height: 340px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -170px;
+        }
+        h2 {
+            text-align: center;
+            font-family: Source Han Serif;
+        }
+        h4 {
+            text-align: center;
+            font-family: Source Han Serif;
+        }
+        span {
+            text-align: center;
+            font-family: Helvetica,Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='content'>
+            <h2>👫 From Oct. 27, 2019 to the future</h2>
+            <div id='DateCountdown' data-date='2019-10-27 23:00:00'></div>
+        </div>
+    </div>
+    <script>$('#DateCountdown').TimeCircles();</script>
+</body>
+</html>
